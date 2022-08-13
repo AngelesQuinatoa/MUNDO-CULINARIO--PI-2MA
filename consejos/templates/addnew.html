@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
 <body>
     <div class="container">
         <div class="navbar">
-             <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+             <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
              
              <ul>
                 <li><a href="/html/paginaprincipal.html">Inicio</a></li>
@@ -40,14 +39,14 @@
                     </li>
                 
             </ul>
-            <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+            <a href="/html/inicio.html"><img src="{% static '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
         </div>
         <div>
             <h1>Quieres aportar con una<br>
                  noticia para la comunidad de Mundo Culinario?</h1>
         </div>
         
-            <img src="/img/news.png" alt="" class="imagen">
+            <img src="{% static '/img/news.png' %}" alt="" class="imagen">
 
 
 

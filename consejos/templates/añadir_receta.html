@@ -1,18 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/LOGO 3.png">
+    <link rel="icon" href="{% static '/img/LOGO 3.png' %}">
     <title>MUNDO CULINARIO-Añadir receta</title>
-    <link rel="stylesheet" href="/css/añadir_receta.css">
+    <link rel="stylesheet" href="{% static 'css/añadir_receta.css' %}">
 </head>
 <!--Barra de navegación-->
 <body>
     <div class="container">
         <div class="navbar">
-             <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+             <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
              
              <ul>
                 <li><a href="/html/paginaprincipal.html">Inicio</a></li>
@@ -38,14 +39,14 @@
                     </li>
                 
             </ul>
-            <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+            <a href="/html/inicio.html"><img src="{% static '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
         </div>
         <div>
             <h1>Tu opinión siempre será importante, te gustaria aportar con un consejo<br>
                  extra para alguna de las recetas de Mundo Culinario?</h1>
         </div>
         
-            <img src="/img/7898571_note_paper_icon.png" alt="" class="imagen">
+            <img src="{% static '/img/7898571_note_paper_icon.png' %}" alt="" class="imagen">
 
 
 
@@ -58,10 +59,10 @@
             </div>
             <div class="box">
                 <figure class="iconos">
-                    <img class="redes" src="/img/icono_twiter.png" alt="">
-                    <img class="redes" src="/img/icono facebook.png" alt="">
-                    <img class="redes" src="/img/icono instagram.png" alt="">
-                    <img class="redes" src="/img/icono telegram.png" alt="">
+                    <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
     
                 </figure>
             </div>

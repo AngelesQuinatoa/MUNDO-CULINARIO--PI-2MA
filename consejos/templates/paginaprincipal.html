@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/LOGO 3.png">
     <title>MUNDO CULINARIO</title>
-    <link rel="stylesheet" href="/css/paginaprincipal.css">
+    <link rel="stylesheet" href="{% static 'css/paginaprincipal.css' %}">
 </head>
 <!--Barra de navegación-->
 <body>
     <div class="container">
         <div class="navbar">
-             <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+             <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
              
              <ul>
                 <li><a href="#">Inicio</a></li>
@@ -40,7 +41,7 @@
                 
                 
             </ul>
-            <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+            <a href="/html/inicio.html"><img src="{% '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
         </div>
 
 
@@ -54,11 +55,11 @@
             de una forma facil y dinámica que las podras pondras poner en practica al instante <br>
              con facilidad. ESPERAMOS TE SEA DE GRAN AYUDA...</p>
 
-             <img src="/img/libro.png" alt=""  class="libro">
+             <img src="{% '/img/libro.png' %}" alt=""  class="libro">
 
              <p class="texto2">Aprende y mejora tus habilidades culinarias con las mejores recetas de Mundo Culinario</p>
              
-             <img src="/img/cooking.png" alt="" class="cook">
+             <img src="{% static '/img/cooking.png' %}" alt="" class="cook">
         </div>
 
 
@@ -71,10 +72,10 @@
             </div>
             <div class="box">
                 <figure class="iconos">
-                    <img class="redes" src="/img/icono_twiter.png" alt="">
-                    <img class="redes" src="/img/icono facebook.png" alt="">
-                    <img class="redes" src="/img/icono instagram.png" alt="">
-                    <img class="redes" src="/img/icono telegram.png" alt="">
+                    <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
     
                 </figure>
             </div>

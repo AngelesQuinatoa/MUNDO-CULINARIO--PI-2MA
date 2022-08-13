@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link rel="icon" href="/img/LOGO 3.png">
     <title>Recetas-MUNDO CULINARIO</title>
 
-    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="{% static 'css/paginaprincipal.css' %}">
 </head>
 <body>
     <body>
@@ -39,7 +40,7 @@
                     </li>
                     
                 </ul>
-                <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+                <a href="/html/inicio.html"><img src="{% '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
             </div>
     <main>
 
@@ -144,10 +145,10 @@
         </div>
         <div class="box">
             <figure class="iconos">
-                <img class="redes" src="/img/icono_twiter.png" alt="">
-                <img class="redes" src="/img/icono facebook.png" alt="">
-                <img class="redes" src="/img/icono instagram.png" alt="">
-                <img class="redes" src="/img/icono telegram.png" alt="">
+                <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
 
             </figure>
         </div>

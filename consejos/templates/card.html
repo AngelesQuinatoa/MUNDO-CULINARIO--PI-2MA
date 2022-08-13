@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/LOGO 3.png">
+    <link rel="icon" href="{% '/img/LOGO 3.png' %}">
     <title>Recetas-MUNDO CULINARIO</title>
 
-    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
 </head>
 <body>
     <body>
         <div class="container">
             <div class="navbar">
-                 <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+                 <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
                  
                  <ul>
                     <li><a href="/html/paginaprincipal.html">Inicio</a></li>
@@ -41,7 +42,7 @@
                    
                     
                 </ul>
-                <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+                <a href="/html/inicio.html"><img src="{% static  '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
             </div>
     <main>
 
@@ -87,7 +88,7 @@
 
             <div class="card__father">
                 <div class="card">
-                    <div class="card__front" style="background-image: url(/img-nt/encebollado\ 2.jpg);">
+                    <div class="card__front" style="{% static 'background-image: url(/img-nt/encebollado\ 2.jpg);' %}">
                         <div class="bg"></div>
                         <div class="body__card_front">
                             <h1>ENCEBOLLADO <br><br>----------------------------------------------------------<br><br>•ﾠﾠ2 Libras de atún fresco<br><br>•ﾠﾠ1 Libra de yuca fresca o congelada
@@ -121,7 +122,7 @@
 
             <div class="card__father">
                 <div class="card">
-                    <div class="card__front" style="background-image: url(/img-nt/cladode´patas.jpg);">
+                    <div class="card__front" style="{%  static 'background-image: url(/img-nt/cladode´patas.jpg);' %}">
                         <div class="bg"></div>
                         <div class="body__card_front">
                             <h1>CALDO DE PATA <br>------------------------------------------------------<br><br>•ﾠﾠ2 Patas de res <br><br>
@@ -173,10 +174,10 @@
         </div>
         <div class="box">
             <figure class="iconos">
-                <img class="redes" src="/img/icono_twiter.png" alt="">
-                <img class="redes" src="/img/icono facebook.png" alt="">
-                <img class="redes" src="/img/icono instagram.png" alt="">
-                <img class="redes" src="/img/icono telegram.png" alt="">
+                <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
 
             </figure>
         </div>
