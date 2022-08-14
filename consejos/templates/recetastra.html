@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,40 +8,39 @@
     <link rel="icon" href="/img/LOGO 3.png">
     <title>Recetas-MUNDO CULINARIO</title>
 
-    <link rel="stylesheet" href="{% static '/css/card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css'%}">
 </head>
 <body>
     <body>
         <div class="container">
             <div class="navbar">
-                 <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
+                <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
                  
                  <ul>
-                    <li><a href="/consejos/templates/paginaprincipal.html">Inicio</a></li>
-                    <li><a href="/consejos/templates/recetas nutriconal.html">Recetas</a>
+                    <li><a href="/consejos/paginaprincipal/">Inicio</a></li>
+                    <li><a href="/consejos/recetasnutricional/">Recetas</a>
                         <ul>
-                            <li><a href="/consejos/templates/card.html">Nacionales</a></li>
-                            <li><a href="/consejos/templates/recetasnutricional.html">Nutricionales</a></li>
-                            <li><a href="/consejos/templates/recetastra.html">Tradicionales</a></li>
-                            <li><a href="/consejos/templates/postres.html">Postres</a></li>
-                            <li><a href="/consejos/templates/recetas.int.html">Internacionales</a></li>
-                            <li><a href="/consejos/templates/recetasexpress.html">Express</a></li>
+                            <li><a href="/consejos/card/">Nacionales</a></li>
+                            <li><a href="/consejos/recetasnutricional/">Nutricionales</a></li>
+                            <li><a href="/consejos/recetastra/">Tradicionales</a></li>
+                            <li><a href="/consejos/postres/">Postres</a></li>
+                            <li><a href="/consejos/recetasint/">Internacionales</a></li>
+                            <li><a href="/consejos/recetasexpress/">Express</a></li>
                         </ul>
                     </li>
-                    <li><a href="/consejos/templates/consejos.html">Consejos</a>
+                    <li><a href="/consejos/consejos/">Consejos</a>
                         <ul>
-                            <li><a href="/consejos/templates/addconsejo.html">Colaborar</a></li>
-                            
+                            <li><a href="/consejos/">Colaborar</a></li>
                             
                         </ul>
-                    </li>    
-                    <li><a href="/consejos/templates/añadir_receta.html">Consejo receta</a></li>
-                    <li><a href="/consejos/templates/noticias.html">Noticias</a>
-                        
+                    </li>  
+                    <li><a href="/consejos/addreceta/">Consejo receta</a></li>
+                    <li><a href="/consejos/noticias/">Noticias</a>
                     </li>
                     
+                    
                 </ul>
-                <a href="/consejos/templates/inicio.html"><img src="{% static '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
+                <a href="/consejos/inicio/"><img src="{% static 'img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
             </div>
     <main>
 

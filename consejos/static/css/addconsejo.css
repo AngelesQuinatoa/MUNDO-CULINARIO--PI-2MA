@@ -269,7 +269,7 @@ h1{
 .imagen{
     width: 230px;
     margin-left: 520px;
-    margin-top: 10px;
+    margin-top: 50px;
     animation: move-vector 2s linear infinite;
 }
 @keyframes move-vector {

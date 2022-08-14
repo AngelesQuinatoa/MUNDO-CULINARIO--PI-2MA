@@ -16,10 +16,8 @@ Including another URLconf
 from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path, include
-from consejos.views import delete_consejo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('consejos/', include('consejos.urls')),
-    path('delete_consejos/<int:consejo_id>/', delete_consejo, name='delete_consejo')
+    path('consejos/', include('consejos.urls'))
 ]
