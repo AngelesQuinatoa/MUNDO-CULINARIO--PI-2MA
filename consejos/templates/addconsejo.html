@@ -84,7 +84,7 @@
                         <h4>{{consejo.titulo}}</h4>
                         <p>{{consejo.descripcion}}</p>
                         </div>
-                    <form action="{% url 'delete_consejo' consejo.id %}" method="GET">
+                    <form action="{% url 'delete_consejo' consejo.id %}" method="POST">
                         {% csrf_token %}
                         <button class="delete">Eliminar</button>
                     </div>
