@@ -6,39 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/LOGO 3.png">
     <title>MUNDO CULINARIO</title>
-    <link rel="stylesheet" href="/css/usar.css">
+    <link rel="stylesheet" href="{% static '/css/usar.css' %}">
 </head>
 <!--Barra de navegación-->
 <body>
     <div class="container">
         <div class="navbar">
-             <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+             <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
              
              <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="/html/recetas nutriconal.html">Recetas</a>
+                <li><a href="/consejos/templates/recetas nutriconal.html">Recetas</a>
                     <ul>
-                        <li><a href="/html/card.html">Nacionales</a></li>
-                        <li><a href="/html/recetasnutricional.html">Nutricionales</a></li>
-                        <li><a href="/html/recetastra.html">Tradicionales</a></li>
-                        <li><a href="/html/postres.html">Postres</a></li>
-                        <li><a href="/html/recetas.int.html">Internacionales</a></li>
-                        <li><a href="/html/recetasexpress.html">Express</a></li>
+                        <li><a href="/consejos/templates/card.html">Nacionales</a></li>
+                        <li><a href="/consejos/templates/recetasnutricional.html">Nutricionales</a></li>
+                        <li><a href="/consejos/templates/recetastra.html">Tradicionales</a></li>
+                        <li><a href="/consejos/templates/postres.html">Postres</a></li>
+                        <li><a href="/consejos/templates/recetas.int.html">Internacionales</a></li>
+                        <li><a href="/consejos/templates/recetasexpress.html">Express</a></li>
                         
                     </ul>
                 </li>
-                <li><a href="/html/consejos.html">Consejos</a>
+                <li><a href="/consejos/templates/consejos.html">Consejos</a>
                     <ul>
-                        <li><a href="/html/addconsejo.html">Colaborar</a></li>
+                        <li><a href="/consejos/templates/addconsejo.html">Colaborar</a></li>
                         
                     </ul>
                 </li>    
-                <li><a href="/html/añadir_receta.html">Consejo receta</a></li>
-                    <li><a href="/html/noticias.html">Noticias</a>
+                <li><a href="/consejos/templates/añadir_receta.html">Consejo receta</a></li>
+                    <li><a href="/consejos/templates/noticias.html">Noticias</a>
                                             </li>
                 
             </ul>
-            <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+            <a href="/consejos/templates/inicio.html"><img src="{% static '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
         </div>
         <div>
 
@@ -57,7 +57,7 @@
                         <div class="body__card_front">
                             <h1><b>1. CUCHILLOS</b><br><br>----------------------------------------------------------<br><br>
                                 Cortar los alimentos con el cuchillo adecuado es fundamental. Hay uno específico para cada alimento pero no hace falta que te conviertas en un maestro cuchillero. Con el de carne, pescado, verduras y el que necesitas para cortar el pan es suficiente.<br> <br>
-                            <img src="/img/cuchillos.jpg" alt="" class="cook"> 
+                            <img src="{% static '/img/cuchillos.jpg' %}" alt="" class="cook"> 
                             </h1>
                             
                         </div>
@@ -66,7 +66,7 @@
                             <div class="body__card_back">
                             <h1><b>2. OLLAS</h1></b><br><br>----------------------------------------------------------<br><br>
             <p>No hace falta tener toda una batería completa pero por lo menos lo mejor es tener 2 de cada tipo.<br> <br>
-            <img src="/img/ollas.jpg" alt="" class="cook">
+            <img src="{% static '/img/ollas.jpg' %}" alt="" class="cook">
                             </p>
                             
                         </div>
@@ -81,7 +81,7 @@
                         <div class="body__card_front">
                             <h1>3. JARRA MEDIDORA<br><br>----------------------------------------------------------<br><br>
                         No solo se usan para hacer repostería. Una jarra es un buen utensilio a la hora de seguir una receta. Si lo prefieres puedes tener un vaso con distintas medidas tipo azúcar, arroz, harina y líquidos. Ésta es de Ikea.<br> <br>
-                    <img src="/img/jarra medidora.jpg" alt="" class="cook">
+                    <img src="{% static '/img/jarra medidora.jpg' %}" alt="" class="cook">
                                 </h1>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                         <div class="body__card_back">
                             <h1>4. BATIDORA</h1><br><br>----------------------------------------------------------<br><br>
                             <p>Ni licuadoras, ni batidoras ni nada. Estamos hablando de utensilios indispensables y aunque puede que los purés no queden con la textura de tu restaurante preferido la batidora de brazo, la detoda la vida, es perfecta.<br> <br>
-                                <img src="/img/batidor.jpg" alt="" class="cook">
+                                <img src="{% static '/img/batidor.jpg' %}" alt="" class="cook">
                                 </p>
                             
                         </div>
@@ -103,7 +103,7 @@
                         <div class="bg"></div>
                         <div class="body__card_front">
                             <h1>5. ESPÁTULAS Y CUCHARONES<br><br><br>----------------------------------------------------------<br><br>Ya sean de madera o de silicona ayudan a remover y desprender los alimentos de las paredes de las ollas o cacerolas. Si quieres prescindir de utensilios como la cuchara o el tenedor, apuesta por la espátula. Y si es de silicona, mejor. Así como es posible prescindir de la cuchara de palo o incluso del tenedor, servir una crema o sopa sin cucharón sería una tarea complicada.<br> <br>
-                                <img src="/img/espatula.jpg" alt="" class="cook">
+                                <img src="{% static '/img/espatula.jpg' %}" alt="" class="cook">
                                 </h1>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                         <div class="body__card_back">
                             <h1>6. TABLA DE PICAR</h1><br><br>----------------------------------------------------------<br><br>
                             <p>Si no quieres llenar de rayones la encimera cuando cortes los alimentos, una tabla de cortar es imprescindible. Si es de madera límpiala con frecuencia para que no sea un nido de bacterias. Así que las sintéticas (mucho menos bonitas) son más seguras para evitar cualquier tipo de contaminación cruzada. Al menos deberías tener 2: una para las verduras y otra para carne y pescado. Y 3 es lo ideal: Cada tipo de alimento, una tabla.<br> <br>
-                                <img src="/img/tabla de picar.jpg" alt="" class="cook">
+                                <img src="{% static '/img/tabla de picar.jpg' %}" alt="" class="cook">
                                 </p>
                             
                         </div>
@@ -130,10 +130,10 @@
             </div>
             <div class="box">
                 <figure class="iconos">
-                    <img class="redes" src="/img/icono_twiter.png" alt="">
-                    <img class="redes" src="/img/icono facebook.png" alt="">
-                    <img class="redes" src="/img/icono instagram.png" alt="">
-                    <img class="redes" src="/img/icono telegram.png" alt="">
+                    <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
     
                 </figure>
             </div>

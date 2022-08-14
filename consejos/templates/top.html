@@ -7,45 +7,45 @@
     <link rel="icon" href="/img/LOGO 3.png">
     <title>TOP-MUNDO CULINARIO</title>
 
-    <link rel="stylesheet" href="/css/top.css">
+    <link rel="stylesheet" href="{% static '/css/top.css' %}">
 </head>
 <body>
     <body>
         <div class="container">
             <div class="navbar">
-                 <img src="/img/LOGO 3.png" class="logo" alt="Main logo">
+                 <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
                  
                  <ul>
-                    <li><a href="/html/paginaprincipal.html">Inicio</a></li>
-                    <li><a href="/html/recetas nutriconal.html">Recetas</a>
+                    <li><a href="{% static '/html/paginaprincipal.html' %}">Inicio</a></li>
+                    <li><a href="{% static '/html/recetas nutriconal.html' %}">Recetas</a>
                         <ul>
-                            <li><a href="/html/card.html">Nacionales</a></li>
-                            <li><a href="/html/recetasnutricional.html">Nutricionales</a></li>
-                            <li><a href="/html/recetastra.html">Tradicionales</a></li>
-                            <li><a href="/html/postres.html">Postres</a></li>
-                            <li><a href="/html/recetas.int.html">Internacionales</a></li>
-                            <li><a href="/html/recetasexpress.html">Express</a></li>
+                            <li><a href="{% static '/html/card.html' %}">Nacionales</a></li>
+                            <li><a href="{% static '/html/recetasnutricional.html' %}">Nutricionales</a></li>
+                            <li><a href="{% static '/html/recetastra.html' %}">Tradicionales</a></li>
+                            <li><a href="{% static '/html/postres.html' %}">Postres</a></li>
+                            <li><a href="{% static '/html/recetas.int.html' %}">Internacionales</a></li>
+                            <li><a href="{% static '/html/recetasexpress.html' %}">Express</a></li>
                         </ul>
                     </li>
-                    <li><a href="/html/consejos.html">Consejos</a>
+                    <li><a href="{% static '/html/consejos.html' %}">Consejos</a>
                         <ul>
-                            <li><a href="/html/addconsejo.html">Colaborar</a></li>
+                            <li><a href="{% static '/html/addconsejo.html' %}">Colaborar</a></li>
                             
                             
                         </ul>
                     </li>    
-                    <li><a href="/html/top.html">Consejo receta</a></li>
-                    <li><a href="/html/noticias.html">Noticias</a>
+                    <li><a href="{% static '/html/top.html' %}">Consejo receta</a></li>
+                    <li><a href="{% static '/html/noticias.html' %}">Noticias</a>
                         
                     </li>
                     
                     
                 </ul>
-                <a href="/html/inicio.html"><img src="/img/icono cerrar sesion.png"  class="exit" alt=""> </a>
+                <a href="{% static '/html/inicio.html' %}"><img src="{% static '/img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
             </div>
 
             <div>
-                <img src="/img/top.png" class="top">
+                <img src="{% static '/img/top.png' %}" class="top">
                 <h1 class="tituloprincipal">Recetas con mejor calificación</h1>
                 <p class="texto">En esta seccion ustd podrá encontrar algunas de las recetas con mejor <br>puntuación de estrellas</p>
             </div>
@@ -81,21 +81,7 @@
                                     lata de cerveza procurando bañar toda la carne con ella.<br>----------------------------------------------------------------------<br>
                                 -6.ﾠﾠUna vez hayamos colocado la cerveza dejamos reposar durante 6 horas pero cada
                                     2 horas debemos volver a rebañar la carne para que se empape nuevamente.</p>
-                                <input type="button" value="Añadir a Favoritos">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                  </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -129,21 +115,7 @@
                                         la sal y caliente hasta que esté listo para servir. <br>---------------------------------------------------------------------<br>
                                     9. Para servir el encebollado de pescado se pone una buena porción del curtido de
                                         cebolla y tomate encima de cada plato de sopa.<br>---------------------------------------------------------------------</p>
-                                <input type="button" value="Añadir a Favoritos">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                  </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -185,21 +157,7 @@
                                 6. En el caldo con las patas, agregar el sofrito. Rectificar el sabor.<br>----------------------------------------------------------------<br>
                                 7. Servir bien caliente, con el mote y las papas y un poco de cilantro
                                     espolvoreado.<br>----------------------------------------------------------------</p>
-                                <input type="button" value="Añadir a Favoritos">
-                                <form>
-                                    <p class="clasificacion">
-                                      <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                      --><label for="radio1">★</label><!--
-                                      --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                      --><label for="radio2">★</label><!--
-                                      --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                      --><label for="radio3">★</label><!--
-                                      --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                      --><label for="radio4">★</label><!--
-                                      --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                      --><label for="radio5">★</label>
-                                    </p>
-                                  </form>
+                               
                             </div>
                         </div>
                     </div>
@@ -218,10 +176,10 @@
             </div>
             <div class="box">
                 <figure class="iconos">
-                    <img class="redes" src="/img/icono_twiter.png" alt="">
-                    <img class="redes" src="/img/icono facebook.png" alt="">
-                    <img class="redes" src="/img/icono instagram.png" alt="">
-                    <img class="redes" src="/img/icono telegram.png" alt="">
+                    <img class="redes" src="{% static '/img/icono_twiter.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono facebook.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono instagram.png' %}" alt="">
+                    <img class="redes" src="{% static '/img/icono telegram.png' %}" alt="">
     
                 </figure>
             </div>
