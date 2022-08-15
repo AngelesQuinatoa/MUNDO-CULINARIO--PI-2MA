@@ -264,6 +264,7 @@ footer .wave#wave4{
     display: flex;
     margin: 20px;
     color: white;
+    text-align: center;
 }
 .noticia1{
     width: 180px;
