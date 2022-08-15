@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'consejosdb',
         'USER': 'postgres',
-        'PASSWORD': '12345',
+        'PASSWORD': '1234anqs',
         'HOST': 'localhost',
         'PORT': '5432',
     }

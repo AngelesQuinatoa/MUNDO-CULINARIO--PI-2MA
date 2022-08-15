@@ -24,3 +24,5 @@ urlpatterns = [
     path('saludable/', views.saludable, name='saludable'),
     path('trucosculinarios/', views.trucosculinarios, name='trucosculinarios')
 ]
+
+
