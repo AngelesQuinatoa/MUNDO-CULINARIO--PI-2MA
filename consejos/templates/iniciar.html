@@ -31,17 +31,17 @@
                     <i class='bx bxl-instagram'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-linkedin'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-facebook-circle'></i>
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="button" value="Registrarse">
+            <input type="text" id="correo" placeholder="correo">
+            <input type="text" id="usuario" placeholder="Usuario">
+            <input type="password" id="contraseña" placeholder="contraseña">
+            <a id="boton" href="/consejos/paginaprincipal/"><input type="button" value="Registrarse"></a>
         </form>
     </div>
     <div class="container-form sign-up">
@@ -52,16 +52,16 @@
                     <i class='bx bxl-instagram'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-linkedin'></i>
                 </div>
                 <div class="border-icon">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-facebook-circle'></i>
                 </div>
             </div>
             <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <a href="/consejos/paginaprincipal/"><input type="button" value="Iniciar Sesion"></a>
+            <input type="text" id="usuario" placeholder="Usuario">
+            <input type="password" id="contraseña" placeholder="contraseña">
+            <a id="boton2" href="/consejos/paginaprincipal/"><input type="button" value="Iniciar Sesion"></a>
         </form>
         <div class="welcome-back">
             <div class="message">
@@ -72,6 +72,8 @@
         </div>
     </div>
     <script src="{% static '/js/script.js'%}"></script>
+    <script src="{% static '/js/sweetAlert.js' %}"></script>
+    <script src="{% static '/js/inicio.js' %}"></script>
 </body>
 
 </html>
