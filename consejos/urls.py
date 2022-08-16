@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import addconsejo, create_consejo, delete_consejo, trucosculinarios
+from .views import addconsejo, create_consejo, delete_consejo, addrecetas, borrar_receta, create_receta, editar,  trucosculinarios
 from . import views
 
 
@@ -15,14 +15,18 @@ urlpatterns = [
     path('recetasexpress/', views.recetasexpress, name='recetasexpress'),
     path('recetastra/', views.recetastra, name='recetastra'),
     path('consejos/', views.consejos, name='consejos'),
-    path('addreceta/', views.addreceta, name='addreceta'),
     path('noticias/', views.noticias, name='noticias'),
     path('inicio/', views.inicio, name='inicio'),
     path('index/', views.index, name='index'),
     path('iniciar/', views.iniciar, name='iniciar'),
     path('queusar/', views.queusar, name='queusar'),
     path('saludable/', views.saludable, name='saludable'),
-    path('trucosculinarios/', views.trucosculinarios, name='trucosculinarios')
+    path('trucosculinarios/', views.trucosculinarios, name='trucosculinarios'),
+    path('addrecet/', views.addrecetas, name='addrecet'),
+    path('nuevo/', create_receta, name='create_receta'),
+    path('borrar_receta/<int:receta_id>/', borrar_receta, name='borrar_receta'),
+    path('editar/<int:receta_id>', editar, name='editar')
 ]
+
 
 

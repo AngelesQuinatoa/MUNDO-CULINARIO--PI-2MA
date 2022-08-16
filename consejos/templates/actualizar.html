@@ -1,20 +1,21 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{% static '/img/LOGO 3.png' %}">
-    <title>MUNDO CULINARIO-Añadir receta</title>
-    <link rel="stylesheet" href="{% static 'css/añadir_receta.css' %}">
+    <link rel="icon" href="/img/LOGO 3.png">
+    <title>MUNDO CULINARIO</title>
+    <link rel="stylesheet" href="{% static 'css/consejo_receta.css' %}">
+    
 </head>
-<!--Barra de navegación-->
 <body>
     <body>
         <div class="container">
             <div class="navbar">
-                <img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
+                 <<img src="{% static '/img/LOGO 3.png' %}" class="logo" alt="Main logo">
                  
                  <ul>
                     <li><a href="/consejos/paginaprincipal/">Inicio</a></li>
@@ -42,17 +43,33 @@
                 </ul>
                 <a href="/consejos/inicio/"><img src="{% static 'img/icono cerrar sesion.png' %}"  class="exit" alt=""> </a>
             </div>
-        <div>
-            <h1>Tu opinión siempre será importante, te gustaria aportar con un consejo<br>
-                 extra para alguna de las recetas de Mundo Culinario?</h1>
-        </div>
-        
-            <img src="{% static '/img/7898571_note_paper_icon.png' %}" alt="" class="imagen">
+            <div>
+                <h1>Tu opinión siempre será importante, quieres aportar un consejo <br>
+                    útil para la comunidad de Mundo Culinario?</h1>
+            </div>
+            
+                <img src="{% static 'img/comentarioss.png'%}" alt="" class="imagen">
+
+                <div class="container2">
+                    <div class="row">
+                        
+                        <div class="col-md-4 offset-md-4">
 
 
+             <h1>Ayudanos a mejorar esta receta</h1>
+             
+             <form method="POST" class="card">
+                {% csrf_token %}
 
-        
-    </body>
-    </html>
-    
-    
+                <div>
+                <label>En que platillo nos ayudaras?</label>
+                <input type="text" name="titulo" placeholder="Ingresa tu consejo de la receta" value="{{receta.titulo}}">
+                </div>
+
+                <div>
+                <label>Consejo:</label>
+                <input name="descripcion" rows="2" placeholder="Detalla tu consejo aqui" value="{{receta.descripcion}}">
+                </div>
+                <button class="btn">ACTUALIZAR</button>
+             </form>
+    </div>       

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Consejo
+from .models import Consejo, Receta
 # Create your views here.
 def addconsejo(request):
     consejos = Consejo.objects.all()
@@ -66,4 +66,27 @@ def saludable(request):
 def trucosculinarios(request):
     return render(request, 'trucosculinarios.html')
 
+#Segundo Crud
+def addrecetas(request):
+    recetas = Receta.objects.all()
+    return render(request, 'consejo_recetas.html', {"recetas": recetas})
 
+def create_receta(request):
+    receta = Receta(titulo=request.POST['titulo'], descripcion=request.POST['descripcion'])
+    receta.save()
+    return redirect('/consejos/addrecet/')
+
+def borrar_receta(request, receta_id):
+    receta = Receta.objects.get(id=receta_id)
+    receta.delete()
+    return redirect('/consejos/addrecet/')
+
+def editar(request, receta_id):
+    receta = Receta.objects.get(pk = receta_id)
+    
+    if request.method == 'POST':
+        receta.titulo = request.POST['titulo']
+        receta.descripcion = request.POST['descripcion']
+        receta.save()
+        return redirect('/consejos/addrecet/')
+    return render(request, 'actualizar.html', {"receta": receta})
