@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import addconsejo, create_consejo, delete_consejo, addrecetas, borrar_receta, create_receta, editar,  trucosculinarios
+from .views import addconsejo, create_consejo, delete_consejo, addrecetas, borrar_receta, create_receta, editar, registro,  trucosculinarios
 from . import views
+from django.contrib.auth.views import LoginView
 
 
 urlpatterns = [
@@ -25,7 +26,9 @@ urlpatterns = [
     path('addrecet/', views.addrecetas, name='addrecet'),
     path('nuevo/', create_receta, name='create_receta'),
     path('borrar_receta/<int:receta_id>/', borrar_receta, name='borrar_receta'),
-    path('editar/<int:receta_id>', editar, name='editar')
+    path('editar/<int:receta_id>', editar, name='editar'),
+    path("login/", LoginView.as_view(template_name="login.html"), name="login"),
+    path('registro/', registro, name='registro')
 ]
 
 

@@ -1,5 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import Consejo, Receta
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, logout
+from django.http import HttpResponse
+
 # Create your views here.
 def addconsejo(request):
     consejos = Consejo.objects.all()
@@ -90,3 +94,18 @@ def editar(request, receta_id):
         receta.save()
         return redirect('/consejos/addrecet/')
     return render(request, 'actualizar.html', {"receta": receta})
+
+
+#registro
+def registro(request):
+    if request.method == "POST":
+        datos = UserCreationForm(request.POST)
+        if datos.is_valid():
+            user = datos.save()
+            login(request, user)
+            return redirect("/consejos/paginaprincipal/")
+        else:
+            return render(request, 'contraseñain.html')
+        
+    form = UserCreationForm()
+    return render(request, "registro.html", {"form": form})
